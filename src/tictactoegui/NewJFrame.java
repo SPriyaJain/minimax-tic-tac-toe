@@ -176,31 +176,43 @@ public class NewJFrame extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(52, 52, 52)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(lblP1Score)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtP1Score, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(24, 24, 24)
-                        .addComponent(lblP2Score)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtP2Score, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
                     .addComponent(txtMessage)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txt00, javax.swing.GroupLayout.DEFAULT_SIZE, 62, Short.MAX_VALUE)
-                            .addComponent(txt10)
-                            .addComponent(txt20))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txt21)
-                            .addComponent(txt11)
-                            .addComponent(txt01))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txt02)
-                            .addComponent(txt12, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(txt22))))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(lblP1Score)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtP1Score, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(lblP2Score)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(txtP2Score, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txt00, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(txt10, javax.swing.GroupLayout.DEFAULT_SIZE, 62, Short.MAX_VALUE)
+                                        .addComponent(txt20)))
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(txt21, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addGap(0, 0, Short.MAX_VALUE)
+                                                .addComponent(txt12, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                .addComponent(txt22, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                        .addComponent(txt11, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(0, 0, Short.MAX_VALUE))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                        .addComponent(txt01, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(txt02, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                        .addGap(6, 6, 6)))
                 .addGap(50, 50, 50))
             .addGroup(layout.createSequentialGroup()
                 .addGap(108, 108, 108)
@@ -222,14 +234,14 @@ public class NewJFrame extends javax.swing.JFrame {
                     .addComponent(txt11, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txt10, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txt12, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(10, 10, 10)
+                .addGap(14, 14, 14)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txt21, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txt20, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txt22, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(32, 32, 32)
                 .addComponent(txtMessage, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 16, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblP1Score)
                     .addComponent(lblP2Score)
@@ -247,7 +259,7 @@ public class NewJFrame extends javax.swing.JFrame {
         if (board[0][0] == " ") {
             board[0][0] = player;
             txt00.setText(player);
-            //checkWinner(board);
+            checkEndGame(board);
             if (gameMethod == 0) {
                 if (player == "X") {
                     player = "O";
@@ -276,7 +288,7 @@ public class NewJFrame extends javax.swing.JFrame {
         if (board[0][1] == " ") {
             board[0][1] = player;
             txt01.setText(player);
-            //checkWinner(board);
+            checkEndGame(board);
             if (gameMethod == 0) {
                 if (player == "X") {
                     player = "O";
@@ -304,7 +316,7 @@ public class NewJFrame extends javax.swing.JFrame {
         if (board[0][2] == " ") {
             board[0][2] = player;
             txt02.setText(player);
-            //checkWinner(board);
+            checkEndGame(board);
             if (gameMethod == 0) {
                 if (player == "X") {
                     player = "O";
@@ -332,7 +344,7 @@ public class NewJFrame extends javax.swing.JFrame {
         if (board[1][0] == " ") {
             board[1][0] = player;
             txt10.setText(player);
-            //checkWinner(board);
+            checkEndGame(board);
             if (gameMethod == 0) {
                 if (player == "X") {
                     player = "O";
@@ -360,7 +372,7 @@ public class NewJFrame extends javax.swing.JFrame {
         if (board[1][1] == " ") {
             board[1][1] = player;
             txt11.setText(player);
-            //checkWinner(board);
+            checkEndGame(board);
             if (gameMethod == 0) {
                 if (player == "X") {
                     player = "O";
@@ -388,7 +400,7 @@ public class NewJFrame extends javax.swing.JFrame {
         if (board[1][2] == " ") {
             board[1][2] = player;
             txt12.setText(player);
-            //checkWinner(board);
+            checkEndGame(board);
             if (gameMethod == 0) {
                 if (player == "X") {
                     player = "O";
@@ -416,7 +428,7 @@ public class NewJFrame extends javax.swing.JFrame {
         if (board[2][0] == " ") {
             board[2][0] = player;
             txt20.setText(player);
-            //checkWinner(board);
+            checkEndGame(board);
             if (gameMethod == 0) {
                 if (player == "X") {
                     player = "O";
@@ -444,7 +456,7 @@ public class NewJFrame extends javax.swing.JFrame {
         if (board[2][1] == " ") {
             board[2][1] = player;
             txt21.setText(player);
-            //checkWinner(board);
+            checkEndGame(board);
             if (gameMethod == 0) {
                 if (player == "X") {
                     player = "O";
@@ -472,7 +484,7 @@ public class NewJFrame extends javax.swing.JFrame {
         if (board[2][2] == " ") {
             board[2][2] = player;
             txt22.setText(player);
-            //checkWinner(board);
+            checkEndGame(board);
             if (gameMethod == 0) {
                 if (player == "X") {
                     player = "O";
@@ -563,22 +575,7 @@ public class NewJFrame extends javax.swing.JFrame {
     }
     
     public void compMove(String[][] board) {
-        if (isFull(board)) {
-            if (checkWinner(board) != " ") {
-                txtMessage.setText("The winner is " + checkWinner(board));
-                if (checkWinner(board) == "X") {
-                    txtP1Score.setText(Integer.toString(Integer.parseInt(txtP1Score.getText()) + 1));
-                } else {
-                    txtP2Score.setText(Integer.toString(Integer.parseInt(txtP2Score.getText()) + 1));
-                }
-            } else {
-                txtMessage.setText("The game ended in a tie!");
-            }
-        } else if (checkWinner(board).equals("X")) {
-            txtMessage.setText("The winner is X");
-        } else if (checkWinner(board).equals("O")) {
-            txtMessage.setText("The winner is O");
-        } else {
+        if (!checkEndGame(board)) {
 //            int bestVal = minimax(board, false);
 //            System.out.println("Bestval: " + bestVal);
 //            boolean foundMove = false;
@@ -599,6 +596,7 @@ public class NewJFrame extends javax.swing.JFrame {
 //            }
             MinimaxResult result = minimax(board, false);
             executeMove(result.row, result.col);
+            checkEndGame(board);
         }
     }
     
@@ -679,6 +677,28 @@ public class NewJFrame extends javax.swing.JFrame {
     
     //for testing
     boolean aiWorked = false;
+    
+    public boolean checkEndGame(String[][] board) {
+        if (checkWinner(board).equals("X")) {
+            txtMessage.setText("The winner is X");
+            txtP1Score.setText(Integer.toString(Integer.parseInt(txtP1Score.getText()) + 1));
+            newGame();
+            player = "O";
+            return true;
+        } else if (checkWinner(board).equals("O")) {
+            txtMessage.setText("The winner is O");
+            txtP2Score.setText(Integer.toString(Integer.parseInt(txtP2Score.getText()) + 1));
+            newGame();
+            player = "O";
+            return true;
+        } else if (isFull(board)) {
+            txtMessage.setText("The game ended in a tie!");
+            newGame();
+            player = "O";
+            return true;
+        }
+        return false;
+    }
     
     public String[][] compMoveWin(String[][] board) {
         aiWorked = false;

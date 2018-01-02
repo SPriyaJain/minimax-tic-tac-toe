@@ -29,38 +29,58 @@
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <Component id="lblP1Score" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="txtP1Score" min="-2" pref="47" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
-                      <Component id="lblP2Score" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="txtP2Score" min="-2" pref="47" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                  </Group>
                   <Component id="txtMessage" max="32767" attributes="0"/>
                   <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="txt00" pref="62" max="32767" attributes="0"/>
-                          <Component id="txt10" alignment="0" max="32767" attributes="0"/>
-                          <Component id="txt20" alignment="0" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="lblP1Score" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="txtP1Score" min="-2" pref="47" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="lblP2Score" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="txtP2Score" min="-2" pref="47" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="txt00" alignment="0" min="-2" pref="70" max="-2" attributes="0"/>
+                                  <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="txt10" alignment="0" pref="62" max="32767" attributes="0"/>
+                                      <Component id="txt20" alignment="0" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Component id="txt21" min="-2" pref="70" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                              <Component id="txt12" min="-2" pref="70" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <EmptySpace min="6" max="32767" attributes="0"/>
+                                              <Component id="txt22" min="-2" pref="70" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="txt11" min="-2" pref="70" max="-2" attributes="0"/>
+                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="txt01" min="-2" pref="70" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="txt02" min="-2" pref="70" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
                       </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="txt21" max="32767" attributes="0"/>
-                          <Component id="txt11" max="32767" attributes="0"/>
-                          <Component id="txt01" max="32767" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="txt02" max="32767" attributes="0"/>
-                          <Component id="txt12" alignment="1" max="32767" attributes="0"/>
-                          <Component id="txt22" alignment="0" max="32767" attributes="0"/>
-                      </Group>
+                      <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+              <EmptySpace min="50" pref="50" max="-2" attributes="0"/>
           </Group>
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="108" max="-2" attributes="0"/>
@@ -86,7 +106,7 @@
                   <Component id="txt10" alignment="3" min="-2" pref="58" max="-2" attributes="0"/>
                   <Component id="txt12" alignment="3" min="-2" pref="58" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="txt21" alignment="3" min="-2" pref="58" max="-2" attributes="0"/>
                   <Component id="txt20" alignment="3" min="-2" pref="58" max="-2" attributes="0"/>
@@ -94,7 +114,7 @@
               </Group>
               <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
               <Component id="txtMessage" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="20" max="32767" attributes="0"/>
+              <EmptySpace pref="16" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="lblP1Score" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="lblP2Score" alignment="3" min="-2" max="-2" attributes="0"/>
