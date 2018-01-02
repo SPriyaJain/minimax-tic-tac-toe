@@ -7,6 +7,8 @@ package tictactoegui;
 import java.awt.Color;
 import static java.awt.image.ImageObserver.WIDTH;
 import javax.swing.JOptionPane;
+import static tictactoegui.Utils.duplicateBoard;
+import static tictactoegui.Utils.isFull;
 
 /**
  *
@@ -18,6 +20,10 @@ public class NewJFrame extends javax.swing.JFrame {
     /**
      * Creates new form NewJFrame
      */
+    
+    //initalize board
+    String[][] board = new String[3][3];
+    
     public NewJFrame() {
         initComponents();
         
@@ -197,7 +203,7 @@ public class NewJFrame extends javax.swing.JFrame {
                             .addComponent(txt22))))
                 .addGap(50, 50, 50))
             .addGroup(layout.createSequentialGroup()
-                .addGap(90, 90, 90)
+                .addGap(108, 108, 108)
                 .addComponent(lblTitle)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -241,7 +247,7 @@ public class NewJFrame extends javax.swing.JFrame {
         if (board[0][0] == " ") {
             board[0][0] = player;
             txt00.setText(player);
-            checkWinner(board);
+            //checkWinner(board);
             if (gameMethod == 0) {
                 if (player == "X") {
                     player = "O";
@@ -249,15 +255,17 @@ public class NewJFrame extends javax.swing.JFrame {
                     player = "X";
                 }
             } else {
-                if (winner == "") {
-                    compMoveWin(board);
-                    if (!aiWorked) {
-                        compMove(board);
-                    }
-                }
-                checkWinner(board);
+//                if (winner == "") {
+//                    compMoveWin(board);
+//                    if (!aiWorked) {
+//                        compMove(board);
+//                    }
+//                }
+//                checkWinner(board);
+                compMove(board);
             }
         } else {
+            System.out.println(board[0][0]);
             txtMessage.setText("You cannot move here!");
         }
     }//GEN-LAST:event_txt00MouseClicked
@@ -268,7 +276,7 @@ public class NewJFrame extends javax.swing.JFrame {
         if (board[0][1] == " ") {
             board[0][1] = player;
             txt01.setText(player);
-            checkWinner(board);
+            //checkWinner(board);
             if (gameMethod == 0) {
                 if (player == "X") {
                     player = "O";
@@ -276,13 +284,14 @@ public class NewJFrame extends javax.swing.JFrame {
                     player = "X";
                 }
             } else {
-                if (winner == "") {
-                    compMoveWin(board);
-                    if (!aiWorked) {
-                        compMove(board);
-                    }
-                }
-                checkWinner(board);
+//                if (winner == "") {
+//                    compMoveWin(board);
+//                    if (!aiWorked) {
+//                        compMove(board);
+//                    }
+//                }
+//                checkWinner(board);
+                compMove(board);
             }
         } else {
             txtMessage.setText("You cannot move here!");
@@ -295,7 +304,7 @@ public class NewJFrame extends javax.swing.JFrame {
         if (board[0][2] == " ") {
             board[0][2] = player;
             txt02.setText(player);
-            checkWinner(board);
+            //checkWinner(board);
             if (gameMethod == 0) {
                 if (player == "X") {
                     player = "O";
@@ -303,13 +312,14 @@ public class NewJFrame extends javax.swing.JFrame {
                     player = "X";
                 }
             } else {
-                if (winner == "") {
-                    compMoveWin(board);
-                    if (!aiWorked) {
-                        compMove(board);
-                    }
-                }
-                checkWinner(board);
+//                if (winner == "") {
+//                    compMoveWin(board);
+//                    if (!aiWorked) {
+//                        compMove(board);
+//                    }
+//                }
+//                checkWinner(board);
+                compMove(board);
             }
         } else {
             txtMessage.setText("You cannot move here!");
@@ -322,7 +332,7 @@ public class NewJFrame extends javax.swing.JFrame {
         if (board[1][0] == " ") {
             board[1][0] = player;
             txt10.setText(player);
-            checkWinner(board);
+            //checkWinner(board);
             if (gameMethod == 0) {
                 if (player == "X") {
                     player = "O";
@@ -330,13 +340,14 @@ public class NewJFrame extends javax.swing.JFrame {
                     player = "X";
                 }
             } else {
-                if (winner == "") {
-                    compMoveWin(board);
-                    if (!aiWorked) {
-                        compMove(board);
-                    }
-                }
-                checkWinner(board);
+//                if (winner == "") {
+//                    compMoveWin(board);
+//                    if (!aiWorked) {
+//                        compMove(board);
+//                    }
+//                }
+//                checkWinner(board);
+                compMove(board);
             }
         } else {
             txtMessage.setText("You cannot move here!");
@@ -349,7 +360,7 @@ public class NewJFrame extends javax.swing.JFrame {
         if (board[1][1] == " ") {
             board[1][1] = player;
             txt11.setText(player);
-            checkWinner(board);
+            //checkWinner(board);
             if (gameMethod == 0) {
                 if (player == "X") {
                     player = "O";
@@ -357,13 +368,14 @@ public class NewJFrame extends javax.swing.JFrame {
                     player = "X";
                 }
             } else {
-                if (winner == "") {
-                    compMoveWin(board);
-                    if (!aiWorked) {
-                        compMove(board);
-                    }
-                }
-                checkWinner(board);
+//                if (winner == "") {
+//                    compMoveWin(board);
+//                    if (!aiWorked) {
+//                        compMove(board);
+//                    }
+//                }
+//                checkWinner(board);
+                compMove(board);
             }
         } else {
             txtMessage.setText("You cannot move here!");
@@ -376,7 +388,7 @@ public class NewJFrame extends javax.swing.JFrame {
         if (board[1][2] == " ") {
             board[1][2] = player;
             txt12.setText(player);
-            checkWinner(board);
+            //checkWinner(board);
             if (gameMethod == 0) {
                 if (player == "X") {
                     player = "O";
@@ -384,13 +396,14 @@ public class NewJFrame extends javax.swing.JFrame {
                     player = "X";
                 }
             } else {
-                if (winner == "") {
-                    compMoveWin(board);
-                    if (!aiWorked) {
-                        compMove(board);
-                    }
-                }
-                checkWinner(board);
+//                if (winner == "") {
+//                    compMoveWin(board);
+//                    if (!aiWorked) {
+//                        compMove(board);
+//                    }
+//                }
+//                checkWinner(board);
+                compMove(board);
             }
         } else {
             txtMessage.setText("You cannot move here!");
@@ -403,7 +416,7 @@ public class NewJFrame extends javax.swing.JFrame {
         if (board[2][0] == " ") {
             board[2][0] = player;
             txt20.setText(player);
-            checkWinner(board);
+            //checkWinner(board);
             if (gameMethod == 0) {
                 if (player == "X") {
                     player = "O";
@@ -411,13 +424,14 @@ public class NewJFrame extends javax.swing.JFrame {
                     player = "X";
                 }
             } else {
-                if (winner == "") {
-                    compMoveWin(board);
-                    if (!aiWorked) {
-                        compMove(board);
-                    }
-                }
-                checkWinner(board);
+//                if (winner == "") {
+//                    compMoveWin(board);
+//                    if (!aiWorked) {
+//                        compMove(board);
+//                    }
+//                }
+//                checkWinner(board);
+                compMove(board);
             }
         } else {
             txtMessage.setText("You cannot move here!");
@@ -430,7 +444,7 @@ public class NewJFrame extends javax.swing.JFrame {
         if (board[2][1] == " ") {
             board[2][1] = player;
             txt21.setText(player);
-            checkWinner(board);
+            //checkWinner(board);
             if (gameMethod == 0) {
                 if (player == "X") {
                     player = "O";
@@ -438,13 +452,14 @@ public class NewJFrame extends javax.swing.JFrame {
                     player = "X";
                 }
             } else {
-                if (winner == "") {
-                    compMoveWin(board);
-                    if (!aiWorked) {
-                        compMove(board);
-                    }
-                }
-                checkWinner(board);
+//                if (winner == "") {
+//                    compMoveWin(board);
+//                    if (!aiWorked) {
+//                        compMove(board);
+//                    }
+//                }
+//                checkWinner(board);
+                compMove(board);
             }
         } else {
             txtMessage.setText("You cannot move here!");
@@ -457,7 +472,7 @@ public class NewJFrame extends javax.swing.JFrame {
         if (board[2][2] == " ") {
             board[2][2] = player;
             txt22.setText(player);
-            checkWinner(board);
+            //checkWinner(board);
             if (gameMethod == 0) {
                 if (player == "X") {
                     player = "O";
@@ -465,13 +480,14 @@ public class NewJFrame extends javax.swing.JFrame {
                     player = "X";
                 }
             } else {
-                if (winner == "") {
-                    compMoveWin(board);
-                    if (!aiWorked) {
-                        compMove(board);
-                    }
-                }
-                checkWinner(board);
+//                if (winner == "") {
+//                    compMoveWin(board);
+//                    if (!aiWorked) {
+//                        compMove(board);
+//                    }
+//                }
+//                checkWinner(board);
+                compMove(board);
             }
         } else {
             txtMessage.setText("You cannot move here!");
@@ -481,11 +497,8 @@ public class NewJFrame extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-    
-    //initalize board
-    String[][] board = new String[3][3];
-    
-    String winner = "";
+      
+    String winner = " ";
     
     String player = "X";
     
@@ -549,33 +562,114 @@ public class NewJFrame extends javax.swing.JFrame {
         checkWinner(board);
     }
     
-    public void compMove() {
-        
+    public void compMove(String[][] board) {
+        if (isFull(board)) {
+            if (checkWinner(board) != " ") {
+                txtMessage.setText("The winner is " + checkWinner(board));
+                if (checkWinner(board) == "X") {
+                    txtP1Score.setText(Integer.toString(Integer.parseInt(txtP1Score.getText()) + 1));
+                } else {
+                    txtP2Score.setText(Integer.toString(Integer.parseInt(txtP2Score.getText()) + 1));
+                }
+            } else {
+                txtMessage.setText("The game ended in a tie!");
+            }
+        } else if (checkWinner(board).equals("X")) {
+            txtMessage.setText("The winner is X");
+        } else if (checkWinner(board).equals("O")) {
+            txtMessage.setText("The winner is O");
+        } else {
+//            int bestVal = minimax(board, false);
+//            System.out.println("Bestval: " + bestVal);
+//            boolean foundMove = false;
+//            for (int row = 0; row < 3 && !foundMove; row++) {
+//                for (int col = 0; col < 3 && !foundMove; col++) {
+//                    System.out.println(board[row][col]);
+//                    if (board[row][col].equals(" ")) {
+//                        String[][] tempBoard = duplicateBoard(board);
+//                        System.out.println("Board before: " + board[row][col]);
+//                        tempBoard[row][col] = "O";
+//                        System.out.println("Board after: " + board[row][col]);
+//                        if (minimax(tempBoard, true) == bestVal) {
+//                            executeMove(row, col);
+//                            foundMove = true;
+//                        }
+//                    }
+//                }
+//            }
+            MinimaxResult result = minimax(board, false);
+            executeMove(result.row, result.col);
+        }
     }
     
-    public String[][] minimax(String[][] board,boolean xTurn) {
-        return null;
+    public MinimaxResult minimax(String[][] board, boolean xTurn) {
+        MinimaxResult result = new MinimaxResult();
+        if (checkWinner(board).equals("X")) {
+            result.bestVal = 10;
+            return result;
+        } else if (checkWinner(board).equals("O")) {
+            result.bestVal = -10;
+            return result;
+        } else if (isFull(board)) {
+            result.bestVal = 0;
+            return result;
+        } else {
+            if (xTurn) {
+                result.bestVal = -20;
+                for (int row = 0; row < 3; row++) {
+                    for (int col = 0; col < 3; col++) {
+                        if (board[row][col].equals(" ")) {
+                            String[][] tempBoard = duplicateBoard(board);
+                            tempBoard[row][col] = "X";
+                            MinimaxResult newResult = minimax(tempBoard, false);
+                            if (newResult.bestVal > result.bestVal) {
+                                result = newResult;
+                                result.row = row;
+                                result.col = col;
+                            }
+                        }
+                    }
+                }
+            } else {
+                result.bestVal = 20;
+                for (int row = 0; row < 3; row++) {
+                    for (int col = 0; col < 3; col++) {
+                        if (board[row][col].equals(" ")) {
+                            String[][] tempBoard = duplicateBoard(board);
+                            tempBoard[row][col] = "O";
+                            MinimaxResult newResult = minimax(tempBoard, true);
+                            if (newResult.bestVal < result.bestVal) {
+                                result = newResult;
+                                result.row = row;
+                                result.col = col;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        return result;
     }
     
     public String checkWinner(String[][] board) {
-        String winner = "";
+        String winner = " ";
                 
         for (int i = 0; i < 3; i++) {
             //check rows
-            if (board[i][0] == board[i][1] && board[i][0] == board[i][2] && board[i][0] != " ") {
+            if (board[i][0].equals(board[i][1]) && board[i][0].equals(board[i][2]) && !board[i][0].equals(" ")) {
                 winner = board[i][0];
             //check columns
-            } else if (board[0][i] == board[1][i] && board[0][i] == board[2][i] && board[0][i] != " ") {
+            } else if (board[0][i].equals(board[1][i]) && board[0][i].equals(board[2][i]) && !board[0][i].equals(" ")) {
                 winner = board[0][i];
             }
         }
 
-        if (winner == "") {
+        if (winner.equals(" ")) {
             //check a diagonal
-            if (board[0][0] == board[1][1] && board[0][0] == board[2][2] && board[0][0] != " ") {
+            if (board[0][0].equals(board[1][1]) && board[0][0].equals(board[2][2]) && !board[0][0].equals(" ")) {
                 winner = board[0][0];
             } //check other diagonal
-            else if (board[2][0] == board[1][1] && board[2][0] == board[0][2] && board[2][0] != " ") {
+            else if (board[2][0].equals(board[1][1]) && board[2][0].equals(board[0][2]) && !board[2][0].equals(" ")) {
                 winner = board[2][0];
             }
         }
@@ -868,6 +962,39 @@ public class NewJFrame extends javax.swing.JFrame {
 
         //checkWinner(board);
         return board;
+    }
+    
+    public void executeMove(int row, int col) {
+        if (row == 0 && col == 0) {
+            txt00.setText("O");
+        } else if (row == 1 && col == 0) {
+            txt10.setText("O");
+        } else if (row == 2 && col == 0) {
+            txt20.setText("O");
+        } else if (row == 0 && col == 1) {
+            txt01.setText("O");
+        } else if (row == 1 && col == 1) {
+            txt11.setText("O");
+        } else if (row == 2 && col == 1) {
+            txt21.setText("O");
+        } else if (row == 0 && col == 2) {
+            txt02.setText("O");
+        } else if (row == 1 && col == 2) {
+            txt12.setText("O");
+        } else if (row == 2 && col == 2) {
+            txt22.setText("O");
+        }
+        
+        board[row][col] = "O";
+        
+        //debugging
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                System.out.print(board[i][j]);
+            }
+            System.out.println();
+        }
+        System.out.println("here");
     }
 
     public void checkWinnerOld(String[][] board) {
