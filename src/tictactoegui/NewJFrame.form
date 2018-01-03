@@ -36,18 +36,16 @@
                               <Component id="lblP1Score" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="txtP1Score" min="-2" pref="47" max="-2" attributes="0"/>
-                              <EmptySpace max="32767" attributes="0"/>
+                              <EmptySpace pref="54" max="32767" attributes="0"/>
                               <Component id="lblP2Score" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Component id="txtP2Score" min="-2" pref="47" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="txt00" alignment="0" min="-2" pref="70" max="-2" attributes="0"/>
-                                  <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="txt10" alignment="0" pref="62" max="32767" attributes="0"/>
-                                      <Component id="txt20" alignment="0" max="32767" attributes="0"/>
-                                  </Group>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="txt00" pref="70" max="32767" attributes="0"/>
+                                  <Component id="txt10" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txt20" alignment="0" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" attributes="0">
@@ -83,7 +81,7 @@
               <EmptySpace min="50" pref="50" max="-2" attributes="0"/>
           </Group>
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="108" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="125" max="-2" attributes="0"/>
               <Component id="lblTitle" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
