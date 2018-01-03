@@ -4,6 +4,6 @@ This game initially started as a school project, but the implementation of the M
 
 This project was made in Java.
 
-[alt text](Start.png "Start screen")
-[alt text](AI.png "Playing against the AI")
-[alt text](Multiplayer.png "Playing multiplayer")
+![alt text](Start.png "Start screen")
+![alt text](AI.png "Playing against the AI")
+![alt text](Multiplayer.png "Playing multiplayer")
